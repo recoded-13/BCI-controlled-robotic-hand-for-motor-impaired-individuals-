@@ -74,17 +74,14 @@ This repository validates our machine learning model using the PhysioNet EEG Mot
 
 If you are interested in replicating or extending this project, you can follow these steps:
 
-I. Preprocess EEG Data (MATLAB)
-   - Place raw EEG files in matlab/raw_data/
-   - Run `preprocess.m` for bandpass filtering and basic artifact removal
-   - Run `segment_trials.m` to segment motor imagery trials
-   - Run export_to_npy.m to save processed data in NumPy format
+I. Preprocess EEG Data (Python)
+   - Run `bci_utils.py`
 II. Train Classification Model (Python)
-   - python train_model.py
+   - `python train_model.py`
 III. Run Real-time Prediction
-   - python real_time.py
+   - `python real_time.py`
 IV. Demonstrate Robotic Control
-   - python demo_hand_control.py
+   - `python demo_hand_control.py`
 
 ## Technologies Used
 - EEG: OpenBCI (Ganglion board)
