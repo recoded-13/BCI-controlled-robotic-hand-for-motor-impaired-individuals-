@@ -25,7 +25,7 @@ We collected EEG data using gold cup electrodes and the OpenBCI Ganglion board.
 - Stored raw EEG in CSV format via Raspberry Pi
 - Performed ERP analysis in MATLAB EEGLAB to identify positive and negative deflections for left/right tasks
 
-This repository validates our machine learning model using the PhysioNet EEG Motor Imagery dataset due to noise in real-time acquisition, but the control system is designed for real-world operation.
+This repository validates our machine learning model using the [PhysioNet EEG Motor Imagery dataset] (https://physionet.org/content/eegmmidb/1.0.0/) due to noise in real-time acquisition, but the control system is designed for real-world operation.
 ## Methods
 ### Signal Acquisition
 
