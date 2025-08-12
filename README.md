@@ -67,12 +67,17 @@ This repository validates our machine learning model using the PhysioNet EEG Mot
 - 3D-printed robotic hand was low-cost but mechanically limited in grip strength
 
 ## How to Interact With This Repo
+### Repository Structure 
+- `bci_utils.py`	Common helper functions for EEG data loading, preprocessing, and feature extraction. Imported by other scripts.
+- `train_model.py`	Training script: Trains CSP + LDA models on all subjects except test subject. Saves pretrained models (csp_model.pkl, lda_model.pkl). Run once before demo day.
+- `demo_hand_control.py`	Demo script: Loads pretrained models and runs a real-time simulation on test subject data. Uses selected EEG trials to simulate robotic hand control. Run during open house/demo.
+
 If you are interested in replicating or extending this project, you can follow these steps:
 
 I. Preprocess EEG Data (MATLAB)
    - Place raw EEG files in matlab/raw_data/
-   - Run preprocess.m for bandpass filtering and basic artifact removal
-   - Run segment_trials.m to segment motor imagery trials
+   - Run `preprocess.m` for bandpass filtering and basic artifact removal
+   - Run `segment_trials.m` to segment motor imagery trials
    - Run export_to_npy.m to save processed data in NumPy format
 II. Train Classification Model (Python)
    - python train_model.py
