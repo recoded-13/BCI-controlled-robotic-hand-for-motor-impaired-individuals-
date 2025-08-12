@@ -76,10 +76,13 @@ If you are interested in replicating or extending this project, you can follow t
 
 I. Preprocess EEG Data (Python)
    - Run `bci_utils.py`
+
 II. Train Classification Model (Python)
    - `python train_model.py`
+
 III. Run Real-time Prediction
    - `python real_time.py`
+
 IV. Demonstrate Robotic Control
    - `python demo_hand_control.py`
 
